@@ -1,0 +1,1 @@
+1. .vue文件中的script标签内,不需要使用import语句。因为nuxt会自动引入，除非我主动编写import语句。
