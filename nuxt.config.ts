@@ -45,5 +45,14 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  components: {
+    dirs: [
+      {
+        path: '~/node_modules/lucide-vue-next/dist/esm/icons',
+        prefix: 'Icon',
+        global: true
+      }
+    ]
   }
 })
