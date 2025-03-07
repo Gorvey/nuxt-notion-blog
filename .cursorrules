@@ -1,1 +1,6 @@
 1. .vue文件中的script标签内,不需要使用import语句。因为nuxt会自动引入，除非我主动编写import语句。
+2. 这个项目是nuxt3项目，技术栈如下
+    1. vue3
+    2. tailwindcss
+    3. typescript
+3. 组件库使用的shadcn-vue

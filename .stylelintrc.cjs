@@ -12,6 +12,7 @@ module.exports = {
     }
   ],
   rules: {
+    'custom-property-empty-line-before': 'null',
     'at-rule-no-unknown': [
       true,
       {

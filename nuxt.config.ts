@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
-    'nuxt-lodash'
+    'nuxt-lodash',
+    '@nuxtjs/color-mode'
   ],
   vite: {
     css: {
@@ -46,13 +47,25 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui'
   },
+  colorMode: {
+    classSuffix: '',
+    preference: 'dark',
+    fallback: 'dark',
+    storage: 'localStorage',
+    storageKey: 'nuxt-color-mode'
+  },
+  imports: {
+    dirs: ['types/**']
+  },
   components: {
     dirs: [
+      '~/components',
       {
         path: '~/node_modules/lucide-vue-next/dist/esm/icons',
         prefix: 'Icon',
         global: true
       }
     ]
-  }
+  },
+  sourcemap: true
 })

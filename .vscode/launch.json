@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "客户端: Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "服务端: Nuxt",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "outputCapture": "std"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "全栈: Nuxt",
+      "configurations": ["服务端: Nuxt", "客户端: Chrome"]
+    }
+  ]
+}

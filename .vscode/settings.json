@@ -18,7 +18,11 @@
   "css.customData": [".vscode/tailwind.json"],
   // "scss.lint.unknownAtRules": "ignore",
   "stylelint.validate": ["css", "scss", "vue"],
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
